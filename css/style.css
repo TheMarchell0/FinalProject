@@ -184,3 +184,27 @@ header {
     margin-bottom: 170px;
     background: #F3F3F3;
 }
+
+.section-six {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 125%;
+    color: #2B3541;
+    margin-bottom: 30px;
+}
+
+.item-description {
+    font-size: 18px;
+    line-height: 150%;
+    color: #2B3541;
+    opacity: 0.6;
+}
+
+footer {
+    background: #F3F3F3;
+}
