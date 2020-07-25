@@ -260,6 +260,16 @@ header {
 
 .h2-section-four {
     padding-top: 91px;
+    position: relative;
+    z-index: 1;
+}
+
+.circle-section-four {
+    position: absolute;
+    fill:  #FBF138;
+    left: -38px;
+    top: 73px;
+    z-index: -1;
 }
 
 .mailing {
@@ -456,6 +466,19 @@ footer {
 
 .nav-link-bottom:hover {
     border-bottom: 1px solid #2B3541;
+}
+
+.email-with-circle {
+    position: relative;
+    z-index: 1;
+}
+
+.circle-footer {
+    position: absolute;
+    fill:  #FBF138;
+    left: -16px;
+    top: -10px;
+    z-index: -1;
 }
 
 .footer-email {
