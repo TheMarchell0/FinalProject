@@ -3,14 +3,15 @@ body {
     background: #fefcfe;
 }
 
+
 h1 {
-padding-top: 238px;
-font-weight: 700;
-font-size: 48px;
-line-height: 125%;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #2B3541;
+    padding-top: 238px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #2B3541;
 }
 
 h2 {
@@ -72,9 +73,11 @@ header {
     padding-right: 15px;
     padding-left: 15px;
 }
+
 .social-icon:hover {
     cursor: pointer;
     fill: black;
+    transition: 0.5s width ease;
     width: 38px;
     height: 38px;
     
@@ -115,6 +118,7 @@ header {
     padding: 20px 30px;
     background-color: #FBF138;
     box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+    transition: 0.3s ease;
 }
 
 .section-one__link:hover,
@@ -141,21 +145,42 @@ header {
 .events-item {
     width: 367px;
     height: 600px;
-    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
     position: relative;
     
 }
 
+.events-item:hover .events__link {
+    display: inline-block;
+    padding: 20px 37px;
+    background: #2B3541;
+    box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.2);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FBF138;
+    position: absolute;
+    left: 30px;
+    top: 205px;
+}
+
+.events-item:hover .events-type {
+    display: none;
+}
+
 .event-one {
-    background-image: url(../img/section-two-maraphon.png);
+    background-image: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.2) 100%), url(../img/section-two-maraphon.png);
 }
 
 .event-two {
-    background-image: url(../img/section-two-vebinar-one.png);
+    background-image: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 30%) 100%), url(../img/section-two-vebinar-one.png);
 }
 
 .event-three {
-    background-image: url(../img/section-two-vebinar-two.png);
+    background-image: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 30%) 100%), url(../img/section-two-vebinar-two.png);
 }
 
 .events-date {
@@ -190,6 +215,42 @@ header {
     display: none;
 }
 
+.training {
+    display:flex;
+}
+
+.training-row {
+    display: flex;
+}
+
+.training-functional-training {
+    height: 250px;
+}
+
+.training-body-sculpt {
+    height: 402px;
+}
+
+.training-lab {
+    height: 309px;
+}
+
+.training-power-mix {
+    height: 433px;
+    }
+
+.training-breathing-practices {
+    height: 281px;
+}
+
+.training-сomplex-warm-up {
+    height: 374px;
+}
+
+.training-item {
+    border: 1px solid black;  
+}
+
 .section-four {
     margin-bottom: 170px;
     background: #F3F3F3;
@@ -211,7 +272,7 @@ header {
 }
 
 .custom-checkbox .custom-checkbox-input {
-	position: absolute;
+    position: absolute;
   left: 0;
   z-index: -1;
   opacity: 0;
@@ -265,15 +326,21 @@ header {
     display: inline-block;
     font-size: 11px;
     line-height: 150%;
-    color: #2B3541;
-    opacity: 0.5;
+    color: rgba(143, 149, 157, 1);
     margin: 0;
 }
 
 .checkbox-link {
     text-decoration: none;
+    color: rgba(143, 149, 157, 1);
+    border-bottom: 1px solid rgba(143, 149, 157, 1);
+    transition: 0.3s ease;
+}
+
+.checkbox-link:hover {
     color: #2B3541;
-    border-bottom: 1px solid rgba(131, 135, 141, 1);
+    border-bottom: 1px solid #2B3541;
+    transition: 0.3s ease;
 }
 
 .mailing input {
@@ -407,10 +474,15 @@ footer {
 .footer-bottom__item {
     font-size: 14px;
     line-height: 150%;
-    color: #2B3541;
-    opacity: 0.3;
+    color:  rgba(143, 149, 157, 1);
 }
 
 .footer-bottom__link {
+    color:  rgba(143, 149, 157, 1);
+    transition: 0.3s ease;
+}
+
+.footer-bottom__link:hover {
     color: #2B3541;
+    transition: 0.3s ease;
 }
