@@ -138,7 +138,7 @@ header {
 
 .section-one__svg {
     display: block;
-    padding-top: 202px;
+    margin-top: 202px;
     margin-left: 91px;
 }
 
@@ -228,6 +228,10 @@ header {
     transition: .3s ease;
 }
 
+.section-three {
+    margin-bottom: 160px;
+}
+
 .section-three__title {
     display: flex;
     justify-content: space-between;
@@ -264,7 +268,7 @@ header {
 }
 
 .training.training-functional-training {
-    flex: 0.5;
+    flex: 0.6;
 }
 
 .training.training-body-sculpt {
@@ -277,7 +281,54 @@ header {
 
 .training .training-content {
     height: 100%;
-    border: 1px solid;
+    border: 1px solid #9599a0;
+    position: relative;
+    overflow: hidden;
+}
+
+.training-date {
+    position: absolute;
+    font-size: 18px;
+    line-height: 150%;
+    color: #010101;
+    opacity: 0.7;
+    right: 20px;
+    top: 27px;
+}
+
+.training-text {
+    position: absolute;
+    bottom: 49px;
+    left: 29px;
+    transform: translate(0, 131px);
+    transition: 0.3s ease;
+}
+
+.training-content:hover .training-text {
+    transform: translate(0, 0);
+}
+
+.training-icon {
+    margin-bottom: 37px;
+}
+
+.training-content:hover .training-icon {
+    margin-bottom: 0px;
+    transition: 0.3s ease;
+}
+
+.training-name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 125%;
+    color: #2B3541;
+}
+
+.training-description {
+    font-size: 18px;
+    line-height: 150%;
+    color: #2B3541;
+    margin: 20px 0 0;
 }
 
 .section-four {
