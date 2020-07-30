@@ -60,19 +60,55 @@
                     <div class="events-date">29.06 - 4.07</div>
                     <div class="events-title">Марафон<br>выносливости</div>
                     <div class="events-type">марафон</div>
-                    <a href="#" class="events__link">Учавствовать</a>
+                    <button class="events__link" id="myBtn">Учавствовать</button>
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p class="modal-title">
+                                <svg class="circle-modal" width="53" height="53" viewBox="0 0 53 53" xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_d)">
+                                        <circle cx="26.5" cy="26.5" r="26.5" />
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_d" x="0" y="0" w filterUnits="userSpaceOnUse"
+                                            color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                            <feOffset dy="13" />
+                                            <feGaussianBlur stdDeviation="12" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0.984314 0 0 0 0 0.945098 0 0 0 0 0.219608 0 0 0 0.3 0" />
+                                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                                        </filter>
+                                    </defs>
+                                </svg>
+                                Заявка на участие<br>«Марафон выносливости»</p>
+                            <p class="modal-description">Заполните все поля, и мы пришлем<br>информацию в ближайшее время</p>
+                            <div class="modal-input-field-one">
+                            <input type="email" placeholder="Ваш e-mail">
+                            <span class="form__error">Некорректный адрес e-mail</span>
+                            </div>
+                            <div class="modal-input-field-two">
+                            <input type="tel" placeholder="Ваш номер телефона" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18" />
+                            <span class="form__error">Некорректный номер телефона</span>
+                            </div>
+                            <button class="modal-confirm">Отправить</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="events-item event-two">
                     <div class="events-date">9.07</div>
                     <div class="events-title">Как стать<br>тренером?</div>
                     <div class="events-type">вебинар</div>
-                    <a href="#" class="events__link">Учавствовать</a>
+                    <button class="events__link" id="myBtn">Учавствовать</button>
                 </div>
                 <div class="events-item event-three">
                     <div class="events-date">15.07</div>
                     <div class="events-title">Йога, как стиль<br>жизни</div>
                     <div class="events-type">вебинар</div>
-                    <a href="#" class="events__link">Учавствовать</a>
+                    <button class="events__link" id="myBtn">Учавствовать</button>
                 </div>
             </div>
         </section>
@@ -153,36 +189,38 @@
     </div>
     <section class="section-four">
         <div class="wrapper">
-            <h2 class="h2-section-four">
-                <svg class="circle-section-four" width="73" height="73" viewBox="0 0 73 73" xmlns="http://www.w3.org/2000/svg">
-                    <g filter="url(#filter0_d)">
-                        <circle cx="26.5" cy="26.5" r="26.5" />
-                    </g>
-                    <defs>
-                        <filter id="filter0_d" x="0" y="0" w filterUnits="userSpaceOnUse"
-                            color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                            <feColorMatrix in="SourceAlpha" type="matrix"
-                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-                            <feOffset dy="13" />
-                            <feGaussianBlur stdDeviation="12" />
-                            <feColorMatrix type="matrix"
-                                values="0 0 0 0 0.984314 0 0 0 0 0.945098 0 0 0 0 0.219608 0 0 0 0.3 0" />
-                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-                        </filter>
-                    </defs>
-                </svg> Подпишитесь на рассылку
-            </h2>
-            <div class="mailing">
-                <input type="email" placeholder="Ваш e-mail">
-                <a href="" class="btn">Подписаться</a>
-            </div>
-            <div class="custom-checkbox">
-                <input type="checkbox" class="custom-checkbox-input" id="checkbox1"><label class="custom-checkbox-label" for="checkbox1">
-                    <p class="checkbox-text">Согласен с обработкой <a class="checkbox-link" href="#">персональных
-                            данных</a></p>
-                </label>
+            <div class="section-four-content">
+                <h2 class="h2-section-four">
+                    <svg class="circle-section-four" width="73" height="73" viewBox="0 0 73 73" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d)">
+                            <circle cx="26.5" cy="26.5" r="26.5" />
+                        </g>
+                        <defs>
+                            <filter id="filter0_d" x="0" y="0" w filterUnits="userSpaceOnUse"
+                                color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                <feOffset dy="13" />
+                                <feGaussianBlur stdDeviation="12" />
+                                <feColorMatrix type="matrix"
+                                    values="0 0 0 0 0.984314 0 0 0 0 0.945098 0 0 0 0 0.219608 0 0 0 0.3 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                            </filter>
+                        </defs>
+                    </svg> Подпишитесь на рассылку
+                </h2>
+                <div class="mailing">
+                    <input type="email" placeholder="Ваш e-mail">
+                    <a href="" class="btn">Подписаться</a>
+                </div>
+                <div class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox-input" id="checkbox1"><label class="custom-checkbox-label" for="checkbox1">
+                        <p class="checkbox-text">Согласен с обработкой <a class="checkbox-link" href="#">персональных
+                                данных</a></p>
+                    </label>
+                </div>
             </div>
         </div>
     </section>
@@ -196,7 +234,7 @@
                     <a class="section-five__link" href="">Записаться</a>
                 </div>
                 <div class="about-company__item">
-                    <img src="img/about-company-img.png" alt="">
+                    <div class="about-company-img"></div>
                 </div>
             </div>
         </section>
@@ -304,7 +342,23 @@
             </div>
         </div>
     </footer>
-    
-</body>
+    <script>
+        var modal = document.getElementById('myModal');
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+             modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
 </html>
