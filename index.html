@@ -24,6 +24,14 @@
                 </ul>
             </nav>
         </div>
+        <div class="header-mobile">
+            <button id="mobile-burger" class="menu"><img src="img/burger-menu.svg" alt="Menu"></button>
+        </div>
+        <div class="mobile-modal">
+            <div class="mobile-modal-content">
+            <p>jopa)</p>
+        </div>
+        </div>
         <div class="social">
             <svg class="social-icon" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.8">
@@ -42,6 +50,7 @@
                         d="M4.39453 30H14.1797V19.3359H10.6641V15.8203H14.1797V11.4258C14.1797 9.00261 16.151 7.03125 18.5742 7.03125H22.9688V10.5469H19.4531C18.4838 10.5469 17.6953 11.3354 17.6953 12.3047V15.8203H22.8101L22.2242 19.3359H17.6953V30H25.6055C28.0286 30 30 28.0286 30 25.6055V4.39453C30 1.97136 28.0286 0 25.6055 0H4.39453C1.97136 0 0 1.97136 0 4.39453V25.6055C0 28.0286 1.97136 30 4.39453 30ZM1.75781 4.39453C1.75781 2.94067 2.94067 1.75781 4.39453 1.75781H25.6055C27.0593 1.75781 28.2422 2.94067 28.2422 4.39453V25.6055C28.2422 27.0593 27.0593 28.2422 25.6055 28.2422H19.4531V21.0938H23.7133L24.8852 14.0625H19.4531V12.3047H24.7266V5.27344H18.5742C15.1817 5.27344 12.4219 8.03329 12.4219 11.4258V14.0625H8.90625V21.0938H12.4219V28.2422H4.39453C2.94067 28.2422 1.75781 27.0593 1.75781 25.6055V4.39453Z" />
                 </g>
             </svg>
+        </div>
     </header>
     <section class="section-one">
         <div class="wrapper">
@@ -51,39 +60,27 @@
             <a href="#" class="section-one__link">Узнать подробнее</a>
             <a href="#training-link"><img class="section-one__svg" src="img/icons/Arrow.svg" alt=""></a>
         </div>
+        <div class="section-one-mobile-background">
+            <img src="img/section-one-bg.png" alt="">
+        </div>
     </section>
     <div class="wrapper">
         <section class="section-two">
-            <h2>Ближайшие события</h2>
+            <h2 class="mobile-h2-events">Ближайшие события</h2>
             <div class="events">
                 <div class="events-item event-one">
                     <div class="events-date">29.06 - 4.07</div>
                     <div class="events-title">Марафон<br>выносливости</div>
                     <div class="events-type">марафон</div>
                     <button class="events__link" id="myBtn">Учавствовать</button>
+                    <div class="mobile-plus">
+                        <img src="img/mobile-plus.svg" alt="">
+                    </div>
                     <div id="myModal" class="modal">
                         <div class="modal-content">
                             <span class="close">&times;</span>
                             <p class="modal-title">
-                                <svg class="circle-modal" width="53" height="53" viewBox="0 0 53 53" xmlns="http://www.w3.org/2000/svg">
-                                    <g filter="url(#filter0_d)">
-                                        <circle cx="26.5" cy="26.5" r="26.5" />
-                                    </g>
-                                    <defs>
-                                        <filter id="filter0_d" x="0" y="0" w filterUnits="userSpaceOnUse"
-                                            color-interpolation-filters="sRGB">
-                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                            <feColorMatrix in="SourceAlpha" type="matrix"
-                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-                                            <feOffset dy="13" />
-                                            <feGaussianBlur stdDeviation="12" />
-                                            <feColorMatrix type="matrix"
-                                                values="0 0 0 0 0.984314 0 0 0 0 0.945098 0 0 0 0 0.219608 0 0 0 0.3 0" />
-                                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-                                        </filter>
-                                    </defs>
-                                </svg>
+                                <img class="circle-modal" src="img/circle.svg" alt="">
                                 Заявка на участие<br>«Марафон выносливости»</p>
                             <p class="modal-description">Заполните все поля, и мы пришлем<br>информацию в ближайшее время</p>
                             <div class="modal-input-field-one">
@@ -360,5 +357,6 @@
             }
         }
     </script>
+</body>
 </body>
 </html>
