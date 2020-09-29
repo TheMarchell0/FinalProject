@@ -14,6 +14,12 @@ h1 {
     color: #2B3541;
 }
 
+@media (max-width: 550px) {
+    h1 {
+        padding-left: 11px;
+    }
+}
+
 h2 {
     font-weight: bold;
     font-size: 40px;
@@ -29,12 +35,24 @@ header {
     padding: 49px 52px 0;
 }
 
+@media (max-width: 550px) {
+    header {
+        padding: 1px 6px 0;
+    }
+}
+
 .wrapper {
     width: 100%;
     max-width: 1142px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px
+}
+@media (max-width: 550px) {
+    .wrapper {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 .nav {
@@ -69,7 +87,15 @@ header {
 
 .social {
     display: flex;
-    align-items: center;
+    min-width: 124px;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+@media (max-width: 550px) {
+    .social {
+        min-width: 83px;
+    }
 }
 
 .social-icon {
@@ -77,9 +103,14 @@ header {
     width: 30px;
     height: 30px;
     opacity: 0.8;
-    padding-right: 15px;
-    padding-left: 15px;
     transition: 0.3s transform ease;
+}
+
+@media (max-width: 550px) {
+    .social-icon {
+        width: 26px;
+        height: 26px;
+    }
 }
 
 .social-icon:hover {
@@ -103,12 +134,23 @@ header {
     margin-bottom: 19px;
 }
 
+@media (max-width: 550px) {
+    .section-one__title {
+        padding-left: 10px;
+    }
+}
+
 .section-one__description {
     font-size: 18px;
     line-height: 150%;
     color: #2B3541;
     margin-left: 91px;
     padding-bottom: 37px;
+}
+@media (max-width: 550px) {
+    .section-one__description {
+        padding-left: 10px;
+    }
 }
 
 .section-one__link {
@@ -125,6 +167,12 @@ header {
     background-color: #FBF138;
     box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
     transition: 0.3s ease;
+}
+
+@media (max-width: 550px) {
+    .section-one__link {
+        margin-left: 10px;
+    }
 }
 
 .section-one__link:hover,
@@ -151,6 +199,12 @@ header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 160px;
+}
+
+@media (max-width: 550px) {
+    .events  {
+        display: none;
+    }
 }
 
 .events-item {
@@ -393,8 +447,20 @@ input:invalid:not(:placeholder-shown) + .form__error {
     justify-content: space-between;
 }
 
+@media (max-width: 550px) {
+    .section-three__title  {
+        width: 95%;
+    }  
+}
+
 .h2-section-three {
     margin: 0!important;
+}
+
+@media (max-width: 550px) {
+    .h2-section-three  {
+        padding-bottom: 20px;
+    }  
 }
 
 .section-three-date {
@@ -407,6 +473,14 @@ input:invalid:not(:placeholder-shown) + .form__error {
     margin: 0 -10px;
     height: 700px;
 }
+@media (max-width: 550px) {
+    .trainings {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }  
+}
 
 .training-column {
     display: flex;
@@ -416,6 +490,12 @@ input:invalid:not(:placeholder-shown) + .form__error {
     padding: 0 10px;
     width: calc(100% / 3);
     margin: -10px 0;
+}
+
+@media (max-width: 550px) {
+    .training-column {
+        width: 364px
+    }  
 }
 
 .training {
@@ -440,6 +520,12 @@ input:invalid:not(:placeholder-shown) + .form__error {
     border: 1px solid #9599a0;
     position: relative;
     overflow: hidden;
+}
+
+@media (max-width: 550px) {
+    .training .training-content {
+        height: 114px;
+    }  
 }
 
 .training-date {
@@ -491,11 +577,24 @@ input:invalid:not(:placeholder-shown) + .form__error {
     background-image: linear-gradient(180deg, #FBF05F 0%, rgba(253, 249, 182, 0) 117%);
     border: none;
 }
+
+@media (max-width: 550px) {
+    .training-power-mix .training-content {
+        height: 201px;
+        margin-bottom: 20px;
+    }
+}
 .section-four {
     margin-bottom: 170px;
     background: #F3F3F3;
     height: 348px;
     display: flex;
+}
+
+@media (max-width: 550px) {
+    .section-four {
+        margin-top: 243px;
+    }
 }
 
 .section-four-content {
@@ -608,6 +707,12 @@ input:invalid:not(:placeholder-shown) + .form__error {
     width: 372px;
 }
 
+@media (max-width: 550px) {
+    .mailing input {
+        width: 265px;
+    }
+}
+
 .btn {
     font-weight: bold;
     font-size: 16px;
@@ -634,6 +739,23 @@ input:invalid:not(:placeholder-shown) + .form__error {
 .about-company {
     display: flex;
     justify-content: space-between;
+}
+@media (max-width: 550px) {
+    .about-company {
+        flex-direction: column;
+    }
+}
+.email-with-social {
+    display: flex;
+    min-width: 552px;
+    justify-content: space-around;
+    min-height: 48px;
+}
+
+@media (max-width: 550px) {
+    .email-with-social  {
+        min-width: 291px;
+    }
 }
 
 .about-company__description {
@@ -688,6 +810,9 @@ input:invalid:not(:placeholder-shown) + .form__error {
 footer {
     background: #F3F3F3;
 }
+.svg-footer {
+    min-width: 125px;
+}
 
 .footer-top {
     display: flex;
@@ -695,20 +820,25 @@ footer {
     align-items: center;
     padding-top: 34px;
 }
+@media (max-width: 550px) {
+    .footer-top {
+        flex-direction: column;
+    }
+}
 
 .nav-bottom {
     display: flex;
     align-items: center;
     list-style-type: none;
+    min-width: 479px;
+    justify-content: space-between;
 }
 
-.nav-item-bottom {
-    padding-left: 47px;
-    padding-right: 47px;
-}
-
-.nav-item-bottom:first-child {
-    padding-left: 0;
+@media (max-width: 550px) {
+    .nav-bottom  {
+        padding: 0;
+        min-width: 293px;
+    }   
 }
 
 .nav-link-bottom {
@@ -728,6 +858,14 @@ footer {
 .email-with-circle {
     position: relative;
     z-index: 1;
+    margin-left: 189px;
+    align-self: center;
+}
+
+@media (max-width: 550px) {
+    .email-with-circle {
+        margin-left: 0;
+    }   
 }
 
 .circle-footer {
@@ -775,11 +913,6 @@ footer {
 
 @media (max-width: 500px) {
 
-    header {
-        padding: 49px 10px;
-        padding-bottom: 0px;
-    }
-
     .nav-header {
         display: none;
     }
@@ -802,6 +935,15 @@ footer {
         cursor: pointer;
         margin-right: 55px;
         margin-top: 9px;
+    }
+
+    @media (max-width: 550px) {
+        .menu {
+            margin-left: 47px;
+            margin-right: 92px;
+            margin-top: 11px 
+        }
+       
     }
 
     .menu:focus {
