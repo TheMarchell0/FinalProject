@@ -261,6 +261,12 @@ header {
     opacity: 0;
 }
 
+@media (max-width: 550px) {
+    .events-item:hover .events-type {
+        opacity: 1;
+    } 
+}
+
 .events__link:focus {
     outline: none;
 }
@@ -269,7 +275,7 @@ header {
     display: none;
 }
 
-.modal, .mobile-modal {
+.modal, .mobile-modal, .modalHeader {
     display: none;
     position: fixed;
     z-index: 3;
@@ -277,9 +283,13 @@ header {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(143, 134, 134, 0.7);
+    background-color: rgba(43, 53, 65, 0.7);
 }
 
+.modalHeader  .modal-content {
+    margin: 0 auto;
+    height: 331px;
+}
 .modal-content, .mobile-modal-content {
     background-color: #f3f3f3;
     margin: 8% auto;
@@ -376,6 +386,70 @@ header {
     top: 30px;
     right: 30px;
     cursor: pointer;
+}
+
+.closeHeader {
+    color: black;
+    font-size: 47px;
+    cursor: pointer;
+    padding-right: 9px;
+}
+
+.modal-content nav {
+    min-width: 93%;
+}
+
+.modal-content-one {
+    display: flex;
+    align-items: center;
+    min-width: 348px;
+    justify-content: space-between;
+    padding-top: 14px;
+}
+
+.nav-modal{
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    min-height: 170px;
+    justify-content: space-between;
+    margin-bottom: 21px;
+}
+
+.nav-item-modal {
+    list-style-type: none;
+    border-bottom: 1px solid #cbcdcf;
+    padding-bottom: 18px;
+    min-width: 340px;
+}
+.nav-item-modal:last-child {
+    border-bottom: none;
+}
+
+.nav-link-modal {
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration: none;
+    color: #2B3541;
+}
+
+.modal-content-three {
+    min-width: 329px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.modal-content-three .social {
+    min-width: 85px;
+    padding-right: 17px;
+}
+
+.img-modal {
+    width: 78px;
+    height: 24px;
 }
 
 .form__error {
@@ -501,6 +575,21 @@ input:invalid:not(:placeholder-shown) + .form__error {
     background: #FBF138;
     padding: 10px 20px;
     transition: .3s ease;
+}
+
+.events-mobile-plus {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #2B3541;
+    padding: 8px 8px;
+
+}
+
+@media (min-width: 551px) {
+    .events-mobile-plus {
+        display: none;
+    }
 }
 
 @media (max-width: 550px) {

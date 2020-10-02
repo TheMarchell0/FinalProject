@@ -27,11 +27,42 @@
         <div class="header-mobile">
             <button id="mobile-burger" class="menu"><img src="img/burger-menu.svg" alt="Menu"></button>
         </div>
-        <div class="mobile-modal">
-            <div class="mobile-modal-content">
-            <p>jopa)</p>
-        </div>
-        </div>
+            <div id="myModalHeader" class="modalHeader">
+                <div class="modal-content">
+                    <div class="modal-content-one">
+                    <img class="img-modal" src="img/logo.svg" alt="Дипломный проект"> 
+                    <span class="closeHeader">&times;</span> 
+                    </div>
+                    <nav>
+                        <ul class="nav-modal modal-content-two">
+                            <li class="nav-item-modal"><a class="nav-link-modal" href="#">Мероприятия</a></li>
+                            <li class="nav-item-modal"><a class="nav-link-modal" href="#">Расписание</a></li>
+                            <li class="nav-item-modal"><a class="nav-link-modal" href="#">О компании</a></li>
+                        </ul>
+                    </nav>
+                    <div class="modal-content-three">
+                       <div class="social">
+                        <svg class="social-icon" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.8">
+                                <path
+                                    d="M4.39453 30H25.6055C28.0286 30 30 28.0286 30 25.6055V4.39453C30 1.97136 28.0286 0 25.6055 0H4.39453C1.97136 0 0 1.97136 0 4.39453V25.6055C0 28.0286 1.97136 30 4.39453 30ZM1.75781 4.39453C1.75781 2.94067 2.94067 1.75781 4.39453 1.75781H25.6055C27.0593 1.75781 28.2422 2.94067 28.2422 4.39453V25.6055C28.2422 27.0593 27.0593 28.2422 25.6055 28.2422H4.39453C2.94067 28.2422 1.75781 27.0593 1.75781 25.6055V4.39453Z" />
+                                <path
+                                    d="M15 22.9102C19.3616 22.9102 22.9102 19.3616 22.9102 15C22.9102 10.6384 19.3616 7.08984 15 7.08984C10.6384 7.08984 7.08984 10.6384 7.08984 15C7.08984 19.3616 10.6384 22.9102 15 22.9102ZM15 8.84766C18.3925 8.84766 21.1523 11.6075 21.1523 15C21.1523 18.3925 18.3925 21.1523 15 21.1523C11.6075 21.1523 8.84766 18.3925 8.84766 15C8.84766 11.6075 11.6075 8.84766 15 8.84766Z" />
+                                <path
+                                    d="M23.7891 8.84766C25.2429 8.84766 26.4258 7.66479 26.4258 6.21094C26.4258 4.75708 25.2429 3.57422 23.7891 3.57422C22.3352 3.57422 21.1523 4.75708 21.1523 6.21094C21.1523 7.66479 22.3352 8.84766 23.7891 8.84766ZM23.7891 5.33203C24.2736 5.33203 24.668 5.72639 24.668 6.21094C24.668 6.69548 24.2736 7.08984 23.7891 7.08984C23.3045 7.08984 22.9102 6.69548 22.9102 6.21094C22.9102 5.72639 23.3045 5.33203 23.7891 5.33203Z" />
+                            </g>
+                        </svg>
+            
+                        <svg class="social-icon" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.8">
+                                <path
+                                    d="M4.39453 30H14.1797V19.3359H10.6641V15.8203H14.1797V11.4258C14.1797 9.00261 16.151 7.03125 18.5742 7.03125H22.9688V10.5469H19.4531C18.4838 10.5469 17.6953 11.3354 17.6953 12.3047V15.8203H22.8101L22.2242 19.3359H17.6953V30H25.6055C28.0286 30 30 28.0286 30 25.6055V4.39453C30 1.97136 28.0286 0 25.6055 0H4.39453C1.97136 0 0 1.97136 0 4.39453V25.6055C0 28.0286 1.97136 30 4.39453 30ZM1.75781 4.39453C1.75781 2.94067 2.94067 1.75781 4.39453 1.75781H25.6055C27.0593 1.75781 28.2422 2.94067 28.2422 4.39453V25.6055C28.2422 27.0593 27.0593 28.2422 25.6055 28.2422H19.4531V21.0938H23.7133L24.8852 14.0625H19.4531V12.3047H24.7266V5.27344H18.5742C15.1817 5.27344 12.4219 8.03329 12.4219 11.4258V14.0625H8.90625V21.0938H12.4219V28.2422H4.39453C2.94067 28.2422 1.75781 27.0593 1.75781 25.6055V4.39453Z" />
+                            </g>
+                        </svg>
+                    </div> 
+                    </div>
+                </div>
+            </div>
         <div class="social">
             <svg class="social-icon" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.8">
@@ -72,6 +103,7 @@
                     <div class="events-date">29.06 - 4.07</div>
                     <div class="events-title">Марафон<br>выносливости</div>
                     <div class="events-type">марафон</div>
+                    <img id="myImgOne" src="img/mobile-plus.svg" alt="" class="events-mobile-plus">
                     <button class="events__link" id="myBtn">Учавствовать</button>
                     <div class="mobile-plus">
                         <img src="img/mobile-plus.svg" alt="">
@@ -99,12 +131,14 @@
                     <div class="events-date">9.07</div>
                     <div class="events-title">Как стать<br>тренером?</div>
                     <div class="events-type">вебинар</div>
+                    <img id="myImgTwo" src="img/mobile-plus.svg" alt="" class="events-mobile-plus">
                     <button class="events__link" id="myBtn">Учавствовать</button>
                 </div>
                 <div class="events-item event-three">
                     <div class="events-date">15.07</div>
                     <div class="events-title">Йога, как стиль<br>жизни</div>
                     <div class="events-type">вебинар</div>
+                    <img id="myImgThree" src="img/mobile-plus.svg" alt="" class="events-mobile-plus">
                     <button class="events__link" id="myBtn">Учавствовать</button>
                 </div>
             </div>
@@ -381,11 +415,42 @@
         </div>
     </footer>
     <script>
+        var modalOne = document.getElementById('myModalHeader');
+        var btn = document.getElementById("mobile-burger");
+        var span = document.getElementsByClassName("closeHeader")[0];
+
+        btn.onclick = function () {
+            modalOne.style.display = "block";
+        }
+
+        span.onclick = function () {
+            modalOne.style.display = "none";
+        }
+
+        window.onclick = function (event)  {
+            if (event.target == modalOne) {
+             modalOne.style.display = "none";
+            }
+        }
+    </script>
+    <script>
         var modal = document.getElementById('myModal');
         var btn = document.getElementById("myBtn");
         var span = document.getElementsByClassName("close")[0];
+        var img1 = document.getElementById("myImgOne");
+        var img2 = document.getElementById("myImgTwo");
+        var img3 = document.getElementById("myImgThree");
 
         btn.onclick = function () {
+            modal.style.display = "block";
+        }
+        img1.onclick = function () {
+            modal.style.display = "block";
+        }
+        img2.onclick = function () {
+            modal.style.display = "block";
+        }
+        img3.onclick = function () {
             modal.style.display = "block";
         }
         span.onclick = function () {
