@@ -114,7 +114,7 @@
                             <p class="modal-title">
                                 <img class="circle-modal" src="img/circle.svg" alt="">
                                 Заявка на участие<br>«Марафон выносливости»</p>
-                            <p class="modal-description">Заполните все поля, и мы пришлем<br>информацию в ближайшее время</p>
+                            <p class="modal-description">Заполните все поля, и мы пришлем информацию в ближайшее время</p>
                             <div class="modal-input-field-one">
                             <input type="email" placeholder="Ваш e-mail">
                             <span class="form__error">Некорректный адрес e-mail</span>
@@ -415,21 +415,21 @@
         </div>
     </footer>
     <script>
-        var modalOne = document.getElementById('myModalHeader');
+        var HeaderModal = document.getElementById('myModalHeader');
         var btn = document.getElementById("mobile-burger");
-        var span = document.getElementsByClassName("closeHeader")[0];
+        var spanHeader = document.getElementsByClassName("closeHeader")[0];
 
         btn.onclick = function () {
-            modalOne.style.display = "block";
+            HeaderModal.style.display = "block";
         }
 
-        span.onclick = function () {
-            modalOne.style.display = "none";
+        spanHeader.onclick = function () {
+            HeaderModal.style.display = "none";
         }
 
         window.onclick = function (event)  {
-            if (event.target == modalOne) {
-             modalOne.style.display = "none";
+            if (event.target == HeaderModal ) {
+                HeaderModal.style.display = "none"; 
             }
         }
     </script>
@@ -457,9 +457,9 @@
             modal.style.display = "none";
         }
 
-        window.onclick = function (event) {
-            if (event.target == modal) {
-             modal.style.display = "none";
+        window.onclick = function (event)  {
+            if (event.target == modal ) {
+                modal.style.display = "none"; 
             }
         }
     </script>

@@ -287,7 +287,8 @@ header {
 }
 
 .modalHeader  .modal-content {
-    margin: 0 auto;
+    margin-top: 0;
+    width: 100%;
     height: 331px;
 }
 .modal-content, .mobile-modal-content {
@@ -349,6 +350,12 @@ header {
     margin-bottom: 40px;
 }
 
+@media (max-width: 550px) {
+    .modal .modal-input-field-two {
+        margin-bottom: 46px;
+    }
+}
+
 .modal-confirm {
     font-weight: bold;
     font-size: 16px;
@@ -402,7 +409,7 @@ header {
 .modal-content-one {
     display: flex;
     align-items: center;
-    min-width: 348px;
+    min-width: 92%;
     justify-content: space-between;
     padding-top: 14px;
 }
@@ -422,7 +429,7 @@ header {
     list-style-type: none;
     border-bottom: 1px solid #cbcdcf;
     padding-bottom: 18px;
-    min-width: 340px;
+    width: 100%;
 }
 .nav-item-modal:last-child {
     border-bottom: none;
@@ -1349,10 +1356,25 @@ footer {
         width: 385px;
     }
 
+    @media (max-width: 550px) {
+        .modal-content, .mobile-modal-content {
+            width: 100%;
+            height: 505px;
+        }
+       
+    }
+
     .modal-title {
         font-size: 16px;
         line-height: 120%;
         text-align: center;
+    }
+
+    @media (max-width: 550px) {
+        .modal-title {
+            margin-top: 55px;
+        }
+       
     }
 
     .circle-modal {
@@ -1368,8 +1390,26 @@ footer {
         text-align: center;
     }
 
+    @media (max-width: 550px) {
+        .modal-description {
+            width: 61%;
+            margin-bottom: 30px;
+        }
+       
+    }
+
     .modal-input {
         width: 353px;
+    }
+
+    @media (max-width: 550px) {
+        .modal input {
+            width: 340px;
+            font-size: 18px;
+            line-height: 150%;
+            padding-top: 17px;
+            padding-bottom: 17px;
+        }  
     }
 
     .modal-confirm {
