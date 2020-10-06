@@ -427,9 +427,9 @@
             HeaderModal.style.display = "none";
         }
 
-        window.onclick = function (event)  {
-            if (event.target == HeaderModal ) {
-                HeaderModal.style.display = "none"; 
+        HeaderModal.onclick = function (event)  {
+            if (this === event.target) {
+                this.style.display = "none";
             }
         }
     </script>
@@ -457,9 +457,9 @@
             modal.style.display = "none";
         }
 
-        window.onclick = function (event)  {
-            if (event.target == modal ) {
-                modal.style.display = "none"; 
+        modal.onclick = function (event)  {
+            if (this === event.target) {
+                this.style.display = "none"; 
             }
         }
     </script>
