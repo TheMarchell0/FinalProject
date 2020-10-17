@@ -1120,6 +1120,8 @@ input:invalid:not(:placeholder-shown) + .form__error {
     opacity: 0.3;
     margin-right: 20px;
     width: 376px;
+    text-indent: 23px;
+    background: white;
 }
 
 @media (max-width: 550px) {
